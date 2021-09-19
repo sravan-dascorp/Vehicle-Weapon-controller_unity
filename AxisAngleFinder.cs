@@ -15,8 +15,8 @@ public class AxisAngleFinder : MonoBehaviour
     [SerializeField] float moveSpeed = 5;
 
   static  float relativeForward;
-  public static Vector3 RigidbodyVelocity;
-  public static Vector3 RigidbodyAngularVelocity;
+  //public static Vector3 RigidbodyVelocity;
+  //public static Vector3 RigidbodyAngularVelocity;
     
 
 private void Update() 
@@ -58,10 +58,10 @@ private void Update()
     }
     
 }
-private void FixedUpdate() {
-    RigidbodyVelocity = target.gameObject.GetComponent<Rigidbody>().velocity;
-    RigidbodyAngularVelocity = target.GetComponent<Rigidbody>().angularVelocity;
-}
+// private void FixedUpdate() { // was suposed to find the velocity of hhe vehicle to add to the projectile..
+// //     RigidbodyVelocity = target.gameObject.GetComponent<Rigidbody>().velocity;
+// //     RigidbodyAngularVelocity = target.GetComponent<Rigidbody>().angularVelocity;
+//  }
 
 
 
